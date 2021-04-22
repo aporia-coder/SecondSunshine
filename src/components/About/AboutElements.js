@@ -21,6 +21,9 @@ export const AboutTextContainer = styled.div`
   width: ${(props) => props.width};
   margin: 2rem auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   span {
     color: rgb(100, 100, 100);
     text-transform: uppercase;

@@ -13,6 +13,9 @@ export const Heading = styled.h4`
   @media (max-width: 655px) {
     font-size: 3rem;
   }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -77,6 +80,12 @@ export const StyledLink = styled(Link)`
   display: inline-block;
   cursor: pointer;
   color: ${(props) => props.theme.primary};
+  @media (max-width: 655px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ScrollUp = styled.div`

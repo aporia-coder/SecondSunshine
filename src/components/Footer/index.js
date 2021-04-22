@@ -28,7 +28,6 @@ const Footer = () => {
               <i class="fab fa-twitter fa-2x"></i>
             </div>
           </div>
-          <div></div>
           <ScrollUp onClick={() => setScroll()}>
             <i class="fas fa-chevron-up"></i>
           </ScrollUp>

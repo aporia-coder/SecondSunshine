@@ -142,7 +142,7 @@ const Explore = ({ properties, forwardRef }) => {
             <Property
               image={property.photos[0].href}
               beds={property.community.beds_max}
-              price={property.community.price_max}
+              price={property.community.price_min}
               city={property.address.city}
               address={property.address.line}
               type={property.prop_type}

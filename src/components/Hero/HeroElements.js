@@ -18,6 +18,9 @@ export const Heroh1 = styled.h1`
   @media (max-width: 655px) {
     grid-column: 1/4;
   }
+  @media (max-width: 400px) {
+    font-size: 4rem;
+  }
 `;
 
 export const HeroImg = styled.img`

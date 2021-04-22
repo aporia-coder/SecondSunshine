@@ -68,14 +68,11 @@ const Search = () => {
       .request(axiosOptions)
       .then((res) => {
         if (res.data.properties.length > 0) {
-          let { price_max } = res.data.properties.community;
-          console.log(price_max);
           setProperties(res.data.properties);
           mapViewRef.current.scrollIntoView();
         } else {
           setErrors("Check details and try to search again");
         }
-        // console.log(res.data.properties);
         setLoading(false);
       })
       .catch((err) => {

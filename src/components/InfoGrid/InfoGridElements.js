@@ -47,10 +47,10 @@ export const TropicalHouseImg = styled.img.attrs({
   min-width: 0;
   min-height: 0;
   @media (max-width: 830px) {
-    grid-row: 1/3;
+    grid-row: 1/2;
   }
   @media (max-width: 655px) {
-    grid-column: 1 / 7;
+    grid-column: 1 / 5;
     grid-row: 1/2;
   }
 `;
@@ -66,5 +66,6 @@ export const Card = styled.div`
   @media (max-width: 655px) {
     grid-column: 1 / 7;
     grid-row: 2/3;
+    box-shadow: none;
   }
 `;

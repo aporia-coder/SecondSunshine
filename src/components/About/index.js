@@ -42,7 +42,7 @@ const About = () => {
         <AboutTextContainer width="50vw">
           <span>about us</span>
           <Heading ref={headingRef}>
-            at SecondSunshine we help you find your dream USA rental property.
+            at Second Sunshine we help you find your dream USA rental property.
           </Heading>
         </AboutTextContainer>
         <AboutTextContainer width="20vw">

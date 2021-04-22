@@ -4,12 +4,15 @@ export const FooterContainer = styled.footer`
   min-height: 40vh;
   width: 100%;
   background-color: #4b4b4b;
-  @media (max-width: 830px) {
+  @media (max-width: 1215px) {
     min-height: 30vh;
   }
 `;
 
 export const FooterGrid = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
   h4 {
     margin: 2rem 0rem;
