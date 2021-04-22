@@ -36,6 +36,9 @@ export const MainText = styled.p`
   margin: 3rem 0;
   letter-spacing: 1px;
   font-weight: 300;
+  @media (max-width: 400px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Hidden = styled.div`
