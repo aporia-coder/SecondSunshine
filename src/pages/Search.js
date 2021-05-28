@@ -4,6 +4,8 @@ import axios from "axios";
 import gsap from "gsap";
 // Make sure to change and change imports from map to search elements
 
+import { realtorApiKey } from "../utilities/api";
+
 // Components
 import {
   SearchContainer,
@@ -55,7 +57,7 @@ const Search = () => {
       sort: "relevance",
     },
     headers: {
-      "x-rapidapi-key": "4e6284403emsh2328b141d982e6dp16af73jsn23c59fc28343",
+      "x-rapidapi-key": `${realtorApiKey}`,
       "x-rapidapi-host": "realtor.p.rapidapi.com",
     },
   };

@@ -24,6 +24,8 @@ import {
 import axios from "axios";
 import uuid from "react-uuid";
 
+import { googleMapsApiKey } from "../../utilities/api";
+
 // Maps
 
 const libraries = ["places"];
@@ -81,7 +83,7 @@ const Explore = ({ properties, forwardRef }) => {
   };
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyB90x8iXUZKY1PYdZySu6zvfPKbcy6SO8M",
+    googleMapsApiKey,
     libraries,
   });
   if (loadError) return "Error loading Maps";
