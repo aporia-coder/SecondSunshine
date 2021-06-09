@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import gsap from "gsap";
-// Make sure to change and change imports from map to search elements
+import env from "react-dotenv";
 
-import { realtorApiKey } from "../utilities/api";
+// Make sure to change and change imports from map to search elements
 
 // Components
 import {
@@ -57,7 +57,7 @@ const Search = () => {
       sort: "relevance",
     },
     headers: {
-      "x-rapidapi-key": `${realtorApiKey}`,
+      "x-rapidapi-key": env.REALTOR_API_KEY,
       "x-rapidapi-host": "realtor.p.rapidapi.com",
     },
   };

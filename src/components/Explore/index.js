@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useHistory } from "react-router-dom";
 import gsap from "gsap";
+import env from "react-dotenv";
 
 // Components
 // import Search from "./Search";
@@ -23,8 +24,6 @@ import {
 } from "@react-google-maps/api";
 import axios from "axios";
 import uuid from "react-uuid";
-
-import { googleMapsApiKey } from "../../utilities/api";
 
 // Maps
 
@@ -83,7 +82,7 @@ const Explore = ({ properties, forwardRef }) => {
   };
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey,
+    googleMapsApiKey: env.GOOGLE_MAPS_API_KEY,
     libraries,
   });
   if (loadError) return "Error loading Maps";
